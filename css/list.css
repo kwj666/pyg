@@ -1,0 +1,160 @@
+/* 列表页专有的css */
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con ul li a {
+    float: left;
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #c81523;
+}
+
+.sk_bd_title {
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.sk_bd_price {
+    padding: 10px 0 0 10px;
+}
+
+.sk_bd_price em {
+    font-size: 23px;
+    color: #e60012;
+}
+
+.sk_bd_price del {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.sk_bd_progress {
+    padding: 0 10px;
+}
+
+.sk_bd_progress i {
+    color: #f24349;
+}
+
+.sk_bd_progress .bar {
+    position: relative;
+    display: inline-block;
+    width: 125px;
+    height: 12px;
+    border: 1px solid #b1191a;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.sk_bd_progress .bar .bar_in {
+    position: absolute;
+    top: -0.5px;
+    left: 0.2px;
+    width: 87%;
+    height: 10px;
+    background-color: #f24349;
+}
+
+.sk_bd_buy {
+    display: block;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 13px;
+}
+/* 翻页制作 */
+.box {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.box a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: #000;
+    line-height: 36px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box .last,
+.box .next {
+    width: 85px;
+}
+
+.box .current {
+    background-color: #fff;
+    border: none;
+}
+
+.box input {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.box button {
+    width: 60px;
+    height: 36px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    outline: none;
+}
